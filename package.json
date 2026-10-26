@@ -13,8 +13,6 @@
     "react": "19.2.0",
     "react-native": "0.83.10",
     "@expo/vector-icons": "^15.0.2",
-    "@opentelemetry/api": "^1.0.0",
-    "react-native-paper": "4.9.2",
     "react-native-screens": "~4.16.0",
     "@supabase/supabase-js": "*",
     "@react-navigation/native": "*",
