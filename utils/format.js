@@ -4,6 +4,21 @@ export function formatRupiah(value) {
   return `Rp ${number.toLocaleString('id-ID')}`;
 }
 
+export function formatDateTime(value) {
+  if (!value) return 'Waktu tidak tercatat';
+
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return 'Waktu tidak tercatat';
+
+  return date.toLocaleString('id-ID', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  });
+}
+
 export function initials(name) {
   const parts = String(name ?? '')
     .trim()

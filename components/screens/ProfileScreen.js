@@ -25,6 +25,14 @@ const SHORTCUTS = [
     tileBg: colors.tealSoft,
     tileFg: colors.teal,
   },
+  {
+    route: 'Voucher Promo',
+    icon: 'ticket-outline',
+    title: 'Voucher promo',
+    body: 'Lihat diskon yang sedang aktif',
+    tileBg: colors.yellowSoft,
+    tileFg: colors.ink,
+  },
 ];
 
 const STEPS = [
@@ -220,11 +228,13 @@ const styles = StyleSheet.create({
   },
   shortcuts: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     gap: spacing.md,
     marginBottom: spacing.xxl,
   },
   shortcut: {
-    flex: 1,
+    flexGrow: 1,
+    flexBasis: '46%',
     backgroundColor: colors.surface,
     borderWidth: 1,
     borderColor: colors.border,

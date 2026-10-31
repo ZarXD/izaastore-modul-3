@@ -25,6 +25,30 @@ const MENU = [
     tileBg: colors.tealSoft,
     tileFg: colors.teal,
   },
+  {
+    route: 'Pemasaran',
+    icon: 'megaphone-outline',
+    title: 'Pemasaran',
+    body: 'Rilis voucher diskon dan pantau promo yang sedang aktif.',
+    tileBg: colors.yellowSoft,
+    tileFg: colors.ink,
+  },
+  {
+    route: 'Laporan Penjualan',
+    icon: 'stats-chart-outline',
+    title: 'Laporan penjualan',
+    body: 'Lihat total pendapatan dan jumlah transaksi yang tercatat.',
+    tileBg: colors.tealSoft,
+    tileFg: colors.teal,
+  },
+  {
+    route: 'Riwayat Transaksi',
+    icon: 'receipt-outline',
+    title: 'Riwayat transaksi',
+    body: 'Telusuri transaksi terbaru beserta waktu dan totalnya.',
+    tileBg: colors.accentSoft,
+    tileFg: colors.accent,
+  },
 ];
 
 export default function DashboardScreen() {
@@ -41,7 +65,7 @@ export default function DashboardScreen() {
       <Text style={styles.overline}>Panel admin</Text>
       <Text style={styles.greeting}>Halo, {displayName}</Text>
       <Text style={styles.lead}>
-        Kelola katalog dan pelanggan Izaa Store dari satu tempat.
+        Kelola katalog, pelanggan, promo, dan laporan Izaa Store dari satu tempat.
       </Text>
 
       <View style={styles.menu}>
